@@ -6,7 +6,7 @@ import BLTButton from "./components/Button";
 
 export default function App() {
   const [address, setAddress] = useState(null);
-  const [txHash, setTxHash] = useState(null);
+  const [result, setResult] = useState(null);
 
   const loginHandler = async () => {
     const accounts = await bloctoSDK?.ethereum?.request({
@@ -41,7 +41,7 @@ export default function App() {
         jsonrpc: '2.0',
         id: 12,
         method: 'eth_getBalance',
-        params: ['0xdc6bad79dab7ea733098f66f6c6f9dd008da3258', 'latest'],
+        params: ['0x5082F249cDb2f2c1eE035E4f423c46EA2daB3ab1', 'latest'],
       };
       const request3 = {
         jsonrpc: '2.0',
@@ -53,33 +53,16 @@ export default function App() {
           data: contract.methods.setValue(123).encodeABI()
          }]
       }
-      batch.add(request0);
-      batch.add(request1);
-      // batch.add(request2);
-      // batch.add(request3);
+      batch.add(request0); 
+      batch.add(request1); 
+      batch.add(request3); 
+      batch.add(request2); 
 
       const responses = await batch.execute({
         timeout: 500000,
       });
       console.log('responses: ', responses);
-
-      // const _txHash = await bloctoSDK.ethereum.request({
-      //   method: "blocto_sendBatchTransaction",
-      //   params: [
-      //     ...web3.eth.sendTransaction.request({
-      //       from: address,
-      //       to: recipient,
-      //       data: contract.methods.setValue(123).encodeABI()
-      //     }).params,
-      //     ...web3.eth.sendTransaction.request({
-      //       from: address,
-      //       to: recipient,
-      //       data: contract.methods.setValue(123).encodeABI()
-      //     }).params
-      //   ]
-      // });
-
-      // setTxHash(_txHash);
+      setResult(JSON.stringify(responses))
     } catch (error) {
       console.log(error);
     }
@@ -105,8 +88,7 @@ export default function App() {
           true
         ]
       });
-      console.log('_txHash',_txHash);
-
+      setResult(_txHash)
     } catch (error) {
       console.log(error);
     }
@@ -116,9 +98,9 @@ export default function App() {
     <div className="App">
       {address ? (
         <>
-          <BLTButton onClick={sendBatchTransactionHandler}>Send</BLTButton>
-          <p>txHash: {txHash}</p>
-          <BLTButton onClick={sendBatchWithRPC}>With RPC</BLTButton>
+          <BLTButton onClick={sendBatchTransactionHandler}>Web3.js Batch</BLTButton>
+          <BLTButton onClick={sendBatchWithRPC}>JSON-RPC</BLTButton>
+          <p>Result: {result}</p>
         </>
       ) : (
         <BLTButton onClick={loginHandler}>Login</BLTButton>
