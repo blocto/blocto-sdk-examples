@@ -53,11 +53,22 @@ export default function App() {
           data: contract.methods.setValue(123).encodeABI()
          }]
       }
-      batch.add(request0); 
-      batch.add(request1); 
-      batch.add(request3); 
-      batch.add(request2); 
-
+      const request4 = {
+        jsonrpc: '2.0',
+        id: 18,
+        method:"eth_sendTransaction",
+        params:[{
+          from: address,
+          to: recipient2,
+          data: contract.methods.setValue(123).encodeABI()
+         }]
+      }
+      batch.add(request1); // 10 eth_getBalance
+      batch.add(request0); // 11 eth_sendTransaction
+      batch.add(request3); // 16 eth_sendTransaction
+      batch.add(request2); // 12 eth_getBalance
+      batch.add(request4); // 18 eth_sendTransaction
+      
       const responses = await batch.execute({
         timeout: 500000,
       });
