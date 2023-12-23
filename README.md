@@ -24,7 +24,6 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 
 - [Sign Message](https://github.com/blocto/blocto-sdk-examples/tree/main/with-aptos-blocto-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-aptos-blocto-sign))
 
-
 ### Blocto Connector
 
 **Ethereum:**
@@ -50,3 +49,15 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 - [ConnectKit](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit))
 
 - [wagmi](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi))
+
+## Quick Update of Blocto SDK Dependencies
+
+To quickly update the Blocto SDK dependencies in all examples, follow these steps:
+
+1. Ensure Node.js is installed on your machine.
+2. Navigate to the project folder containing the `updateBloctoExamples.js` file.
+3. Run the following command in the terminal:
+
+```bash
+yarn start
+```
