@@ -1166,10 +1166,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blocto/sdk@^0.9.0-beta.2":
-  version "0.9.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@blocto/sdk/-/sdk-0.9.0-beta.2.tgz#4019c55f65971d00b12ebdcc48a22e0713236bf3"
-  integrity sha512-n8Etm/TcDAtZMdOUyKWP5qcmU6I3Fn/W2lRWJA5h5NHI/fICvDrORhTZRfTzq0sMT5n6dxSNgUh8EAXIWU+/bQ==
+"@blocto/sdk@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@blocto/sdk/-/sdk-0.9.0.tgz#4b70b5bc0493fb6d03e2e2d4e08bd3e6620b0826"
+  integrity sha512-qyBTKu5YIIRzvDcl4thjYEYF03UyyNF4AmURmt4AhjverwgKTaqNWVirNJY6Quh+AWp6ylq7jjkrALQstHKZww==
   dependencies:
     buffer "^6.0.3"
     eip1193-provider "^1.0.1"
