@@ -1,5 +1,5 @@
 {
-  "name": "with-evm-blocto-batch-transaction",
+  "name": "with-evm-blocto-batch-transaction-v4",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "web3": "^1.8.0"
+    "web3": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
