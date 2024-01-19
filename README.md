@@ -49,4 +49,6 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 
 - [ConnectKit](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit))
 
+- [Wagmi](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi))
+
 - [Wagmi v1](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi-v1) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi-v1))
