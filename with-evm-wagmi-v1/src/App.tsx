@@ -11,7 +11,7 @@ export function App() {
 
   return (
     <>
-      <h1>wagmi</h1>
+      <h1>Wagmi v1</h1>
 
       <Connect />
 
