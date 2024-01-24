@@ -197,3 +197,7 @@ button span:hover:before {
 button span:hover:after {
   width: 100%;
 }
+
+code {
+  padding: 5px;
+}
