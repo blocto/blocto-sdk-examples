@@ -1,23 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import {
   AptosWalletAdapterProvider,
   NetworkName,
-} from '@aptos-labs/wallet-adapter-react';
-import { BloctoWallet } from '@blocto/aptos-wallet-adapter-plugin';
+} from "@aptos-labs/wallet-adapter-react";
+import { BloctoWallet } from "@blocto/aptos-wallet-adapter-plugin";
 
 const wallets = [
   new BloctoWallet({
     network: NetworkName.Testnet,
     // please register your app id at https://developers.blocto.app/
-    bloctoAppId: "85d8d5db-e481-44f6-9363-7f7f4809eb39"
-  })
+    bloctoAppId: "00000000-0000-0000-0000-000000000000",
+  }),
 ];
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
@@ -25,7 +25,7 @@ root.render(
       plugins={wallets}
       autoConnect={false}
       onError={(error) => {
-        console.log('Handle Error Message', error);
+        console.log("Handle Error Message", error);
       }}
     >
       <App />

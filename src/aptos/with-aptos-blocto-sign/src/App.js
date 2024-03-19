@@ -3,6 +3,7 @@ import nacl from "tweetnacl";
 import "./App.css";
 import BloctoSDK from "@blocto/sdk";
 import BLTButton from "./components/Button";
+import { Buffer } from "buffer";
 
 export default function App() {
   const [bloctoSDK, setBloctSDK] = useState(null);
@@ -14,10 +15,10 @@ export default function App() {
   const loginHandler = async () => {
     const bloctoSDK = new BloctoSDK({
       aptos: {
-        chainId: 2 // mainnet 1, testnet 2
+        chainId: 2, // mainnet 1, testnet 2
       },
       // please register your app id at https://developers.blocto.app/
-      appId: "85d8d5db-e481-44f6-9363-7f7f4809eb39"
+      appId: "00000000-0000-0000-0000-000000000000",
     });
     const publicAccount = await bloctoSDK.aptos.connect();
     console.log("accounts", publicAccount);
@@ -29,8 +30,8 @@ export default function App() {
     // a unique identifier for the request
     const nonce = "eab0a194-a56f-4a93-ba84-a7f4533ad914";
     const response = await bloctoSDK.aptos.signMessage({
-      message: message,
-      nonce: nonce
+      message,
+      nonce,
     });
     console.log(response);
     setResponse(response);
