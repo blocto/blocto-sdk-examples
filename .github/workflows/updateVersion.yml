@@ -1,0 +1,45 @@
+name: Update version
+on: repository_dispatch
+
+jobs:
+  release:
+    name: Create version PR from release branch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Set Environment Variables
+        id: setEnvironmentVariables
+        run: echo "PACKAGE_VERSION=$(echo '${{ toJson(github.event.client_payload) }}' | jq -r '.version')" >> $GITHUB_OUTPUT
+
+      - name: Print version
+        run: echo "${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}"
+
+      - name: Update SDK verison
+        run: yarn updateAll ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update SDK version
+          title: "chore(deps): bump sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') "
+          body: SDK version [SDK](https:'https://github.com/blocto/blocto-sdk/releases/tag/@blocto/sdk@${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') version is released
+          branch: update-sdk-version
+          base: main
+          labels: version
+          assignees: ${{ github.actor }}
+          reviewers: ${{ github.actor }}
+          draft: false
