@@ -24,9 +24,6 @@ jobs:
         id: setEnvironmentVariables
         run: echo "PACKAGE_VERSION=$(echo '${{ toJson(github.event.client_payload) }}' | jq -r '.version')" >> $GITHUB_OUTPUT
 
-      - name: Print version
-        run: echo "${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}"
-
       - name: Update SDK verison
         run: yarn updateAll ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}
 
@@ -34,7 +31,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update SDK version
+          commit-message: chore(deps): bump blocto-sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}')
           title: "chore(deps): bump sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') "
           body: SDK version [SDK](https:'https://github.com/blocto/blocto-sdk/releases/tag/@blocto/sdk@${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') version is released
           branch: update-sdk-version
