@@ -2,9 +2,10 @@
   "name": "blocto-sdk-examples",
   "version": "1.0.0",
   "description": "Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. Each example is accompanied by its respective README, providing additional instructions and explanations.",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node updateBloctoExamples.js"
+    "updateVersion": "node updateBloctoExamples.mjs",
+    "updateAll": "node updateAllExamples.mjs"
   },
   "repository": {
     "type": "git",
