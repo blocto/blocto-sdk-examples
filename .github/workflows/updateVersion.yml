@@ -31,7 +31,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: chore(deps): bump blocto-sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}')
+          commit-message: chore(deps): bump blocto-sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}
           title: "chore(deps): bump sdk to ${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') "
           body: SDK version [SDK](https:'https://github.com/blocto/blocto-sdk/releases/tag/@blocto/sdk@${{ steps.setEnvironmentVariables.outputs.PACKAGE_VERSION }}') version is released
           branch: update-sdk-version
