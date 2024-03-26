@@ -26,8 +26,6 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 
 **Ethereum:**
 
-- [Web3.js-plugin-EIP4337](https://github.com/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337))
-
 - [Web3-React](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3-react-next) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3-react-next))
 
 - [RainbowKit](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit))
