@@ -53,3 +53,10 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 **Aptos:**
 
 - [Wallet Adapter](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter))
+
+
+### others
+
+**Ethereum:**
+
+- [Web3.js-plugin-EIP4337](https://github.com/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337))
