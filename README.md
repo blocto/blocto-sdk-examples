@@ -6,49 +6,55 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 
 **Ethereum:**
 
-- [Connect / Disconnect](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-connect) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-connect))
+- [Connect / Disconnect](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-connect) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-connect))
 
-- [Sign Message](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-sign))
+- [Sign Message](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-sign))
 
-- [Verify Signature](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-verify-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-verify-sign))
+- [Verify Signature](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-verify-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-verify-sign))
 
-- [Switch Ethereum Chain](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-switch-chain) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-switch-chain))
+- [Switch Ethereum Chain](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-switch-chain) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-switch-chain))
 
-- [Batch Transaction](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-batch-transaction))
+- [Batch Transaction](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-batch-transaction) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-batch-transaction))
 
-- [Send ERC-4337 UserOperation](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-send-useroperation) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-blocto-send-useroperation))
+- [Send ERC-4337 UserOperation](https://github.com/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-send-useroperation) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/evm/with-blocto-send-useroperation))
 
 **Aptos:**
 
-- [Wallet Adapter](https://github.com/blocto/blocto-sdk-examples/tree/main/with-aptos-adapter) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-aptos-adapter))
-
-- [Sign Message](https://github.com/blocto/blocto-sdk-examples/tree/main/with-aptos-blocto-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-aptos-blocto-sign))
-
+- [Sign Message](https://github.com/blocto/blocto-sdk-examples/tree/main/src/aptos/with-blocto-sign) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/aptos/with-blocto-sign))
 
 ### Blocto Connector
 
 **Ethereum:**
 
-- [Web3.js-plugin-EIP4337](https://github.com/blocto/blocto-sdk-examples/tree/main/with-web3js-4337) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-web3js-4337))
+- [Web3-React](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3-react-next) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3-react-next))
 
-- [Web3-React](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-web3-react-next) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3-react-next))
+- [RainbowKit](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit))
 
-- [RainbowKit](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-rainbowkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-rainbowkit))
+- [RainbowKit - Custom Authentication](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication))
 
-- [RainbowKit - Custom Authentication](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-rainbowkit-custom-authentication) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-rainbowkit-custom-authentication))
+- [Web3Modal](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3modal) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3modal))
 
-- [Web3Modal](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-web3modal) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3modal))
+- [Web3-Onboard](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3onboard) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3onboard))
 
-- [Web3-Onboard](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard))
+- [Web3-Onboard - Vanilla](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3onboard-vanilla) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3onboard-vanilla))
 
-- [Web3-Onboard - Vanilla](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard-vanilla) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-web3onboard-vanilla))
+- [Dynamic](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-dynamic) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-dynamic))
 
-- [Dynamic](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-dynamic) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-dynamic))
+- [thirdweb](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-thirdweb) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-thirdweb))
 
-- [thirdweb](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-thirdweb) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-thirdweb))
+- [ConnectKit](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-connectkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-connectkit))
 
-- [ConnectKit](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-connectkit))
+- [Wagmi](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-wagmi) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-wagmi))
 
-- [Wagmi](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi))
+- [Wagmi v1](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-wagmi-v1) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-wagmi-v1))
 
-- [Wagmi v1](https://github.com/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi-v1) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/with-evm-wagmi-v1))
+**Aptos:**
+
+- [Wallet Adapter](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter))
+
+
+### others
+
+**Ethereum:**
+
+- [Web3.js-plugin-EIP4337](https://github.com/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/others/with-web3js-4337))
