@@ -1161,13 +1161,13 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blocto/dappauth@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@blocto/dappauth/-/dappauth-2.1.0.tgz#7154292bac4af1f021312ebffc921c7c893a1f36"
-  integrity sha512-wFxRRBLCioyGgiyb1qkIDUKg3kirwXXgiL7XCBJvU9nwM4eKwoWsOyqHnNuZJhewwzcJvtGSU5eWTUskVbZEZQ==
+"@blocto/dappauth@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@blocto/dappauth/-/dappauth-2.2.2.tgz#608ef1ae44105620f9e1bb7aad1908eafc7cb07e"
+  integrity sha512-Cs8uIghwKCZR+HbcpEA6G3JBfTUhjk3qeBD5WXXvyVDYxJpA2wkoKDg9x+g+WmawAO/z0Kr0q6GcAPN/2E4Y3A==
   dependencies:
     ethereumjs-abi "^0.6.6"
-    ethereumjs-util "^6.0.0"
+    ethereumjs-util "^7.1.5"
     safe-buffer "^5.1.2"
     web3 "^1.3.1"
 
