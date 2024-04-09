@@ -27,7 +27,13 @@ const connectors = connectorsForWallets(
   [
     {
       groupName: "Popular",
-      wallets: [rainbowWallet, metaMaskWallet, bloctoWallet, coinbaseWallet],
+      wallets: [
+        rainbowWallet,
+        metaMaskWallet,
+        // @ts-ignore
+        bloctoWallet(),
+        coinbaseWallet,
+      ],
     },
   ],
   {

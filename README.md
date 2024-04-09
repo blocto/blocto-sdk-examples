@@ -32,7 +32,7 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 
 - [RainbowKit(v1)](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-v1))
 
-- [RainbowKit(v1)- Custom Authentication](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication))
+- [RainbowKit(v1) - Custom Authentication](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-rainbowkit-custom-authentication))
 
 - [Web3Modal](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3modal) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/evm/with-web3modal))
 
@@ -53,7 +53,6 @@ Catalogue of various dapp examples implementing Blocto's **SDK and Connector**. 
 **Aptos:**
 
 - [Wallet Adapter](https://github.com/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter) ([Demo](https://codesandbox.io/s/github/blocto/blocto-sdk-examples/tree/main/src/adapter/aptos/with-aptos-adapter))
-
 
 ### others
 
