@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@blocto/rainbowkit-connector": "0.2.9",
+    "@blocto/rainbowkit-connector": "^1",
     "@rainbow-me/rainbowkit": "^1.0.8",
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",

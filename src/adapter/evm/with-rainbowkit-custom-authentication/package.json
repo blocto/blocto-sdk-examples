@@ -4,7 +4,7 @@
   "private": true,
   "sideEffects": false,
   "dependencies": {
-    "@blocto/rainbowkit-connector": "0.2.9",
+    "@blocto/rainbowkit-connector": "^1",
     "@rainbow-me/rainbowkit": "^1.0.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
