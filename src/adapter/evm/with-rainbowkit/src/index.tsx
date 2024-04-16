@@ -20,21 +20,16 @@ import {
 import { bloctoWallet } from "@blocto/rainbowkit-connector";
 
 const projectId = "YOUR_PROJECT_ID";
-
 const appName = "RainbowKit demo";
 
 const connectors = connectorsForWallets(
   [
-    {
-      groupName: "Popular",
-      wallets: [
+    {groupName: "Popular", wallets: [
         rainbowWallet,
         metaMaskWallet,
-        // @ts-ignore
         bloctoWallet(),
         coinbaseWallet,
-      ],
-    },
+      ],},
   ],
   {
     projectId,
