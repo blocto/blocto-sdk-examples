@@ -4,7 +4,7 @@ import { useWallets } from "@web3-onboard/react";
 let typedMsg = JSON.stringify(
     {
         domain: {
-            chainId: "0x13881",
+            chainId: "97",
             name: "Web3-Onboard Test App",
             verifyingContract: "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
             version: "1"
