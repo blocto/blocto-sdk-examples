@@ -9,8 +9,8 @@ const handleAdd = async () => {
       method: "wallet_addEthereumChain", // add chain first
       params: [
         {
-          chainId: 137, // Polygon testnet
-          rpcUrls: ["https://rpc.ankr.com/polygon/"]
+          chainId: "0x61", // Polygon testnet
+          rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"]
         }
       ]
     });
@@ -67,25 +67,25 @@ export default function App() {
               });
             }}
           >
-            Add chain 137
+            Add chain 0x13882
           </BLTButton>
           <BLTButton
             onClick={() => {
-              handleSwitch(137).then(() => {
+              handleSwitch("0x61").then(() => {
                 setChainId(bloctoSDK?.ethereum?.chainId);
               });
             }}
           >
-            Switch to chain 137
+            Switch to 0x13882
           </BLTButton>
           <BLTButton
             onClick={() => {
-              handleSwitch(1).then(() => {
+              handleSwitch("0x13882").then(() => {
                 setChainId(bloctoSDK?.ethereum?.chainId);
               });
             }}
           >
-            Switch to chain 1
+            Switch to 0x61
           </BLTButton>
           <br />
           Switchable chainId inside sdk now:

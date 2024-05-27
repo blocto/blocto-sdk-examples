@@ -3,8 +3,8 @@ import BloctoSDK from "@blocto/sdk";
 
 const bloctoSDK = new BloctoSDK({
     ethereum: {
-        chainId: "0x1", // (required) chainId to be used
-        rpc: `https://eth.llamarpc.com` // (required for Ethereum) JSON RPC endpoint
+        chainId: "0x13882", // (required) chainId to be used
+        rpc: `https://rpc-amoy.polygon.technology` // (required for Ethereum) JSON RPC endpoint
     }
 });
 
