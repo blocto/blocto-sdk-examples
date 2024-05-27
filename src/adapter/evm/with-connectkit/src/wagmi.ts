@@ -1,5 +1,5 @@
 import { configureChains, createConfig } from 'wagmi'
-import { arbitrumGoerli, polygonMumbai } from 'wagmi/chains'
+import { sepolia, bscTestnet } from 'wagmi/chains'
 
 import { publicProvider } from 'wagmi/providers/public'
 import { BloctoConnector } from '@blocto/connectkit-connector';
@@ -8,7 +8,7 @@ import { getDefaultConnectors } from 'connectkit';
 export const walletConnectProjectId = 'c1642a0a861332fe7ac8b5820f347dd4'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [polygonMumbai, arbitrumGoerli],
+  [bscTestnet, sepolia],
   [
     publicProvider(),
   ],
