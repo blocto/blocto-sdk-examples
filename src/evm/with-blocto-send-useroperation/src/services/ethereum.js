@@ -3,9 +3,9 @@ import BloctoSDK from "@blocto/sdk";
 
 const bloctoSDK = new BloctoSDK({
     ethereum: {
-        chainId: "0x13882", // (required) chainId to be used
-        rpc: `https://rpc-amoy.polygon.technology`
-    }
+        chainId: "0xaa36a7", // (required) chainId to be used
+        rpc: `https://ethereum-sepolia.blockpi.network/v1/rpc/public`,
+    },
 });
 
 const web3 = new Web3(bloctoSDK.ethereum);
