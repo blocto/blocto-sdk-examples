@@ -9,7 +9,7 @@ import {
   connectorsForWallets,
 } from "@rainbow-me/rainbowkit";
 import { createConfig, http, WagmiProvider } from "wagmi";
-import { bscTestnet, blastSepolia } from "wagmi/chains";
+import { bscTestnet, blastSepolia, polygonAmoy } from "wagmi/chains";
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
@@ -39,8 +39,9 @@ const connectors = connectorsForWallets(
 
 const config = createConfig({
   connectors: [...connectors],
-  chains: [bscTestnet, blastSepolia],
+  chains: [polygonAmoy, bscTestnet, blastSepolia],
   transports: {
+    [polygonAmoy.id]: http(),
     [bscTestnet.id]: http(),
     [blastSepolia.id]: http(),
   },
