@@ -2,14 +2,14 @@ import injectedModule from "@web3-onboard/injected-wallets";
 import { init } from "@web3-onboard/react";
 import bloctoModule from "@web3-onboard/blocto";
 
-const polygonTestnet = {
-    id: "0x13881",
-    token: "MATIC",
-    label: "Polygon",
-    rpcUrl: "https://rpc-mumbai.maticvigil.com"
+const bscTestnet = {
+    id: "0x61",
+    token: "BNB",
+    label: "BSC Testnet",
+    rpcUrl: "https://data-seed-prebsc-1-s1.binance.org:8545"
 };
 
-const chains = [polygonTestnet];
+const chains = [bscTestnet];
 const blocto = bloctoModule();
 const wallets = [injectedModule(), blocto];
 

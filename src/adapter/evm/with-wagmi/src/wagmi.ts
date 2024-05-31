@@ -1,22 +1,20 @@
 import { http, createConfig } from 'wagmi'
-import { bscTestnet, optimismGoerli, polygonMumbai } from 'wagmi/chains'
+import { bscTestnet, sepolia, polygonAmoy } from 'wagmi/chains'
 import { blocto } from '@blocto/wagmi-connector'
 
 export const config = createConfig({
-  chains: [polygonMumbai, bscTestnet, optimismGoerli],
+  chains: [polygonAmoy, bscTestnet, sepolia],
   multiInjectedProviderDiscovery: false,
   connectors: [
     blocto(),
   ],
   transports: {
-    [polygonMumbai.id]: http(
-      'https://rpc.ankr.com/polygon_mumbai',
-    ),
+    [polygonAmoy.id]: http('https://rpc-amoy.polygon.technology'),
     [bscTestnet.id]: http(
       'https://rpc.ankr.com/bsc_testnet_chapel',
     ),
-    [optimismGoerli.id]: http(
-      'https://rpc.ankr.com/optimism_testnet'
+    [sepolia.id]: http(
+      'https://rpc.sepolia.org',
     ),
   },
 })

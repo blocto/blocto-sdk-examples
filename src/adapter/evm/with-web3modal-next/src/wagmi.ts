@@ -1,12 +1,12 @@
 import { BloctoConnector } from '@blocto/web3modal-connector'
 import { w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { configureChains, createConfig } from 'wagmi'
-import { arbitrumGoerli, polygonMumbai } from 'wagmi/chains'
+import { bscTestnet, sepolia } from 'wagmi/chains'
 
 export const walletConnectProjectId = 'c1642a0a861332fe7ac8b5820f347dd4'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [polygonMumbai, arbitrumGoerli],
+  [bscTestnet, sepolia],
   [w3mProvider({ projectId: walletConnectProjectId })],
 )
 

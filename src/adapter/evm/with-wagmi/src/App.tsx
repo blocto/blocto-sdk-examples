@@ -21,7 +21,7 @@ import {
   useWaitForTransactionReceipt,
   useWriteContract,
 } from 'wagmi'
-import { optimism } from 'wagmi/chains'
+import { polygonAmoy } from 'wagmi/chains'
 
 import { wagmiContractConfig } from './contracts'
 
@@ -196,9 +196,9 @@ function Balance() {
 
   const { data: default_ } = useBalance({ address })
   const { data: account_ } = useBalance({ address })
-  const { data: optimism_ } = useBalance({
+  const { data: polygon_ } = useBalance({
     address,
-    chainId: optimism.id,
+    chainId: polygonAmoy.id,
   })
 
   return (
@@ -207,7 +207,7 @@ function Balance() {
 
       <div>Balance (Default Chain): {default_?.formatted}</div>
       <div>Balance (Account Chain): {account_?.formatted}</div>
-      <div>Balance (Optimism Chain): {optimism_?.formatted}</div>
+      <div>Balance (Polylgon Amoy): {polygon_?.formatted}</div>
     </div>
   )
 }
@@ -217,8 +217,8 @@ function BlockNumber() {
   const { data: account_ } = useBlockNumber({
     watch: true,
   })
-  const { data: optimism_ } = useBlockNumber({
-    chainId: optimism.id,
+  const { data: polygon_ } = useBlockNumber({
+    chainId: polygonAmoy.id,
     watch: true,
   })
 
@@ -228,7 +228,7 @@ function BlockNumber() {
 
       <div>Block Number (Default Chain): {default_?.toString()}</div>
       <div>Block Number (Account Chain): {account_?.toString()}</div>
-      <div>Block Number (Optimism): {optimism_?.toString()}</div>
+      <div>Block Number (Polygon Amoy): {polygon_?.toString()}</div>
     </div>
   )
 }

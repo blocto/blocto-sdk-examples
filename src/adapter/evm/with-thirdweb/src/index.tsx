@@ -8,19 +8,19 @@ import {
 } from '@thirdweb-dev/react';
 import {
   Ethereum, Polygon, Arbitrum, Optimism, Avalanche, Binance, // Mainnets 
-  Goerli,Mumbai,ArbitrumGoerli,OptimismGoerli,AvalancheFuji,BinanceTestnet // Testnets
+  AvalancheFuji,BinanceTestnet // Testnets
 } from "@thirdweb-dev/chains";
 import './styles/globals.css';
 
 const BLOCTO_SUPPORTED_MAINNET_CHAIN = [Ethereum, Polygon, Arbitrum, Optimism, Avalanche, Binance];
-const BLOCTO_SUPPORTED_TESTNET_CHAIN = [Goerli, Mumbai, ArbitrumGoerli, OptimismGoerli, AvalancheFuji, BinanceTestnet];
+const BLOCTO_SUPPORTED_TESTNET_CHAIN = [AvalancheFuji, BinanceTestnet];
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <ThirdwebProvider
-      activeChain={Mumbai}
+      activeChain={BinanceTestnet}
       supportedChains={BLOCTO_SUPPORTED_TESTNET_CHAIN}
       supportedWallets={[bloctoWallet()]}
     >
