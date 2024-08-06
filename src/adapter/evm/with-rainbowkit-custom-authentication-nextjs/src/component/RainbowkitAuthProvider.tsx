@@ -53,7 +53,7 @@ export default function RainbowkitAuthProvider({
       return false;
     },
     signOut: async () => {
-      console.log('singout handler');
+      console.log('signout handler');
     },
   });
   return (
